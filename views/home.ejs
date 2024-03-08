@@ -1,5 +1,13 @@
 <%- include('partials/header') %>
 
-<h1>hiii</h1>
+<div class="container">
+    <input type="file" id="file-input"  accept="image/png, image/jpeg" onchange="preview()" multiple>
+    <label for="file-input"> 
+        <i class="fas fa-upload"></i> Choose A Photo 
+    </label>
+    <p id="num-of-files">No Files Chosen</p>
+    <div id="images"></div>
 
-<%- include('partials/header') %>
+    <a onclick="lencheck()" href="/uploaded">UPLOAD IMAGES</a>
+</div>
+<%- include('partials/footer') %>
